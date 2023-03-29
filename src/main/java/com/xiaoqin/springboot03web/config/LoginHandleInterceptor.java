@@ -16,7 +16,7 @@ public class LoginHandleInterceptor implements HandlerInterceptor {//拦截器
         Object loginUser = request.getSession().getAttribute("loginUser");
 
         if (loginUser == null){ //没有登陆
-            request.setAttribute("msg","没有权限，请登录111232！");
+            request.setAttribute("msg","没有权限，请登录hot-fix test！");
             request.getRequestDispatcher("/index.html").forward(request,response);//请求转发和请求包含
             return false;
         }else{
