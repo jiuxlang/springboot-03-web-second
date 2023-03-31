@@ -11,3 +11,7 @@ spring:
   devtools:
     restart:
       enabled: true
+
+  mvc:
+    format:
+      date: yyyy-MM-dd
